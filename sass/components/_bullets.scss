@@ -1,0 +1,56 @@
+.bullets {
+  @extend %bullets-section-style;
+}
+
+.bullet {
+  padding-top: 94px;
+  padding-bottom: 0;
+
+  &__main {
+    @extend %bullets-section-style;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__icon {
+    width: 270px;
+    height: 120px;
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+
+    background-color: $color-bullet-hero;
+    border-radius: $border-radius-max;
+  }
+
+  &__icon:not(:first-child) {
+    margin-right: 30px;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    font-family: $body-font;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-mini;
+    line-height: $line-height-hight;
+
+    color: $title-text-color;
+  }
+
+  &__description {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-family: $body-font;
+    font-weight: $font-weight-thin;
+    font-size: $font-size-mini;
+    line-height: $line-height-hight;
+
+    color: $primary-text-color;
+  }
+}

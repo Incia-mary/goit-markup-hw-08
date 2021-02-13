@@ -1,0 +1,51 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $body-font;
+  color: $title-text-color;
+  background-color: $main-color;
+}
+
+li {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.none {
+  padding: 0;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  margin: 0;
+}
+
+.section__portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}

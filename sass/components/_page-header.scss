@@ -1,0 +1,119 @@
+.header {
+  font-family: $body-font;
+  color: $title-text-color;
+  background-color: $main-color;
+
+  &__main-nav {
+    @extend %flex-style;
+    height: 80px;
+  }
+
+  &__nav {
+    @extend %flex-style;
+  }
+
+  &__site-nav {
+    @extend %flex-style;
+    margin-left: 93px;
+  }
+
+  &__site-nav .item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  &__line {
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  &__link {
+    display: $display-b;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    position: $position-r;
+
+    font-family: $body-font;
+    font-weight: $font-weight-semibold;
+    font-size: $font-size-mini;
+    line-height: $line-height-low;
+    letter-spacing: $letter-spacing-ave;
+
+    color: $title-text-color;
+
+    transition: color $time $cubic;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $accent-color;
+  }
+
+  &__link.current {
+    color: $accent-color;
+  }
+
+  &__link::after {
+    content: '';
+
+    position: $position-a;
+    display: $display-b;
+
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+
+    width: 100%;
+    height: 4px;
+    border-radius: $border-radius-min;
+
+    background-color: $accent-color;
+
+    transition: opacity $time $cubic;
+  }
+
+  &__auth-nav {
+    display: $display-f;
+    margin-left: auto;
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  &__auth-nav .item + .item {
+    margin-left: 50px;
+  }
+
+  &__mail-tel {
+    @extend %flex-style;
+
+    font-family: $body-font;
+    font-weight: $font-weight-semibold;
+    font-size: $font-size-mini;
+    line-height: $line-height-low;
+    letter-spacing: $letter-spacing-ave;
+    color: $primary-text-color;
+
+    transition: color $time $cubic;
+  }
+
+  &__mail-tel:hover,
+  &__mail-tel:focus {
+    color: $accent-color;
+  }
+
+  &__icon-mail {
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    fill: $icon-color;
+  }
+
+  &__icon-tel {
+    margin-right: 10px;
+
+    fill: $icon-color;
+  }
+}
+
+.current.header__link::after,
+.header__link:hover::after {
+  opacity: 1;
+}

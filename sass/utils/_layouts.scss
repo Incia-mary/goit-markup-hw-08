@@ -1,0 +1,68 @@
+%flex-style {
+  display: $display-f;
+  align-items: $align-items;
+}
+
+%logo {
+  font-family: $logo-font;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-big;
+  line-height: $line-height-medium;
+  letter-spacing: $letter-spacing-mid;
+}
+
+%button-none-style {
+  padding: $padding-default;
+  border: $border-default;
+  line-height: $line-height-min;
+}
+
+%bullets-section-style {
+  display: $display-f;
+  padding: $padding-default;
+}
+
+%title-text {
+  margin-top: 0;
+  margin-bottom: 50px;
+  align-items: $align-items;
+  text-align: $text-align;
+  justify-content: $justify-content;
+
+  font-family: $body-font;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-semihuge;
+  line-height: $line-height-semimedium;
+
+  letter-spacing: $letter-spacing-mid;
+
+  color: $title-text-color;
+}
+
+%block-main {
+  display: $display-f;
+}
+
+%padding-block {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+%justify-align {
+  align-items: $align-items;
+  justify-content: $justify-content;
+}
+
+%footer-contact {
+  font-family: $body-font;
+  font-weight: $font-weight-thin;
+  font-size: $font-size-mini;
+  line-height: $line-height-hight;
+  letter-spacing: $letter-spacing-mid;
+}
+
+%line-style-none {
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+}

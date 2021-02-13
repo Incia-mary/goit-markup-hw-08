@@ -1,0 +1,93 @@
+.hero {
+  @extend %padding-block;
+  background-color: $color-bullet-hero;
+
+  &__title {
+    @extend %title-text;
+  }
+
+  &__main {
+    @extend %block-main;
+  }
+
+  &__item {
+    align-content: $align-content;
+
+    background: $main-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__image {
+    margin-bottom: 30px;
+  }
+
+  &__name {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    font-family: $body-font;
+    font-weight: $font-weight-semibold;
+    font-size: $font-size-normal;
+    line-height: $line-height-medium;
+    text-align: $text-align;
+    letter-spacing: $letter-spacing-mid;
+
+    color: $title-text-color;
+  }
+
+  &__description {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-family: $body-font;
+    font-weight: $font-weight-thin;
+    font-size: $font-size-normal;
+    line-height: $line-height-medium;
+    text-align: $text-align;
+    letter-spacing: $letter-spacing-mid;
+
+    color: $primary-text-color;
+  }
+
+  &__network-set {
+    display: $display-f;
+    padding-top: 16px;
+    padding-bottom: 30px;
+    justify-content: $justify-content;
+  }
+
+  &__network {
+    display: $display-if;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+    color: $network-color;
+    background-color: $main-color;
+
+    transition: background-color $time $cubic, color $time $cubic;
+  }
+
+  &__network:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__network:hover,
+  &__network:focus {
+    color: $main-color;
+    background-color: $accent-color;
+  }
+
+  &__icon-network {
+    height: 20px;
+    fill: $icon-color;
+  }
+}

@@ -1,0 +1,78 @@
+$title-text-color: #212121;
+$primary-text-color: #757575;
+$accent-color: #2196f3;
+$main-color: #ffffff;
+$color-banner-overlay: rgba(47, 48, 58, 0.4);
+$color-bullet-hero: #f5f4fa;
+$color-direct-overlay: rgba(47, 48, 58, 0.8);
+$network-color: #afb1b8;
+$icon-color: currentColor;
+$border-color: #eeeeee;
+$footer-color: rgba(255, 255, 255, 0.6);
+$footer-input-border-color: rgba(255, 255, 255, 0.3);
+$fotter-net-color: rgba(255, 255, 255, 0.1);
+$footer-input-bgcolor: #2f303a;
+$project-overlay-bgcolor: rgba(33, 150, 243, 0.9);
+$backdrop-bgcolor: rgba(0, 0, 0, 0.2);
+$modal-button-border-color: rgba(0, 0, 0, 0.1);
+$modal-form-border-color: rgba(33, 33, 33, 0.2);
+$textarea-placeholder-color: rgba(117, 117, 117, 0.5);
+$logo-color: #000000;
+
+$body-font: 'Roboto', sans-serif;
+$logo-font: 'Raleway', sans-serif;
+
+$font-weight-heavy: 900;
+$font-weight-bold: 700;
+$font-weight-semibold: 500;
+$font-weight-thin: 400;
+
+$font-size-huge: 44px;
+$font-size-semihuge: 36px;
+$font-size-big: 26px;
+$font-size-semibig: 20px;
+$font-size-regular: 18px;
+$font-size-normal: 16px;
+$font-size-mini: 14px;
+$font-size-lil: 12px;
+
+$line-height-hight: 2;
+$line-height-huge: 1.9;
+$line-height-semihight: 1.6;
+$line-height-average: 1.36;
+$line-height-semiaverage: 1.25;
+$line-height-medium: 1.19;
+$line-height-semimedium: 1.17;
+$line-height-regular: 1.15;
+$line-height-low: 1.14;
+$line-height-min: 0;
+
+$letter-spacing-min: 0.01em;
+$letter-spacing-ave: 0.02em;
+$letter-spacing-mid: 0.03em;
+$letter-spacing-max: 0.06em;
+
+$padding-default: 0px;
+
+$border-default: none; /*0px*/
+$border-radius-min: 2px;
+$border-radius-max: 4px;
+
+$display-f: flex;
+$display-b: block;
+$display-i: inline;
+$display-if: inline-flex;
+$display-ib: inline-block;
+
+$text-align: center;
+$align-items: center;
+$align-content: center;
+$justify-content: center;
+
+$position-r: relative;
+$position-a: absolute;
+
+$cursor: pointer;
+
+$time: 250ms;
+$cubic: cubic-bezier(0.4, 0, 0.2, 1);

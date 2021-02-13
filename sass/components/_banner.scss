@@ -1,0 +1,65 @@
+.banner {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  left: 0px;
+  top: 80px;
+
+  text-align: $text-align;
+
+  &__overlay {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../../images/bannero.jpg');
+
+    background-color: $footer-input-bgcolor;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__main-title {
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    font-family: $body-font;
+    font-weight: $font-weight-heavy;
+    font-size: $font-size-huge;
+    line-height: $line-height-average;
+
+    letter-spacing: $letter-spacing-max;
+    text-transform: uppercase;
+
+    color: $main-color;
+  }
+
+  &__button {
+    display: $display-i;
+    align-items: $align-items;
+    @extend %button-none-style;
+
+    min-width: 200px;
+    min-height: 50px;
+
+    font-family: $body-font;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-normal;
+    line-height: $line-height-huge;
+
+    letter-spacing: $letter-spacing-max;
+    color: $main-color;
+    background-color: $accent-color;
+
+    cursor: $cursor;
+
+    border-radius: $border-radius-max;
+    padding: 10px 32px;
+  }
+}
