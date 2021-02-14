@@ -1,24 +1,14 @@
 .banner {
-  padding-top: 118px;
-  padding-bottom: 118px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   left: 0px;
-  top: 60px;
+  top: 80px;
 
   text-align: $text-align;
 
-  @media (min-width: $tablet-width) {
-    top: 80px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    top: 80px;
-  }
-
   &__overlay {
-    max-width: 480px;
-    height: 400px;
+    max-width: 1600px;
+    height: 600px;
     margin-left: auto;
     margin-right: auto;
 
@@ -33,16 +23,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
-    @media (min-width: $tablet-width) {
-      max-width: 768px;
-      height: 400px;
-    }
-
-    @media (min-width: $desktop-width) {
-      max-width: 1600px;
-      height: 600px;
-    }
   }
 
   &__main-title {
@@ -51,17 +31,13 @@
 
     font-family: $body-font;
     font-weight: $font-weight-heavy;
-    font-size: $font-size-big;
-    line-height: $line-height-semihight;
+    font-size: $font-size-huge;
+    line-height: $line-height-average;
 
     letter-spacing: $letter-spacing-max;
     text-transform: uppercase;
 
     color: $main-color;
-    @media (min-width: $desktop-width) {
-      font-size: $font-size-huge;
-      line-height: $line-height-average;
-    }
   }
 
   &__button {

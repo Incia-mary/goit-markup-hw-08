@@ -1,0 +1,55 @@
+.direct {
+  @extend %padding-block;
+
+  &__title {
+    @extend %title-text;
+  }
+
+  &__main {
+    @extend %block-main;
+  }
+
+  &__image {
+    width: 370px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    line-height: $line-height-min;
+  }
+
+  &__image:last-child {
+    margin-right: 0;
+  }
+
+  &__thumb {
+    position: $position-r;
+  }
+
+  &__overlay {
+    position: $position-a;
+    left: 0;
+    bottom: 0;
+    width: 370px;
+    height: 70px;
+
+    background: $color-direct-overlay;
+  }
+
+  &__text {
+    position: $position-a;
+    margin: 0;
+    left: 83px;
+    bottom: 27px;
+
+    text-align: $text-align;
+    justify-content: $justify-content;
+
+    font-family: $body-font;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-mini;
+    line-height: $line-height-low;
+
+    letter-spacing: $letter-spacing-mid;
+
+    color: $main-color;
+  }
+}

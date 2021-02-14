@@ -1,0 +1,15 @@
+.logo {
+  @extend %logo;
+  color: $logo-color;
+
+  transition: color $time $cubic;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  .accent {
+    color: $accent-color;
+  }
+}

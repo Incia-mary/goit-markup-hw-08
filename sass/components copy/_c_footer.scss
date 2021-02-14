@@ -1,0 +1,164 @@
+.footer {
+  position: $position-r;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: $footer-input-bgcolor;
+
+  &__info {
+    @extend %block-main;
+  }
+
+  &__logo {
+    margin-bottom: 20px;
+  }
+
+  &__logo-link {
+    @extend %logo;
+    color: $main-color;
+  }
+
+  &__address {
+    margin-top: 0;
+    margin-bottom: 9px;
+
+    @extend %footer-contact;
+
+    color: $main-color;
+  }
+
+  &__contact {
+    margin-top: 20px;
+
+    @extend %footer-contact;
+
+    color: $footer-color;
+  }
+
+  &__mail {
+    margin-bottom: 6px;
+  }
+
+  &__social {
+    width: 300px;
+    margin-left: 70px;
+  }
+
+  &__form-title {
+    width: 219px;
+    height: 16px;
+    margin-bottom: 20px;
+
+    font-family: $body-font;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-mini;
+    line-height: $line-height-low;
+    letter-spacing: $letter-spacing-mid;
+    text-transform: uppercase;
+
+    color: $main-color;
+  }
+
+  &__network-set {
+    @extend %block-main;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__network {
+    display: $display-if;
+
+    align-items: $align-items;
+    width: 44px;
+    height: 44px;
+
+    background-color: $fotter-net-color;
+    border-radius: 50%;
+
+    transition: background-color $time $cubic;
+  }
+
+  &__network:hover,
+  &__network:focus {
+    background-color: $accent-color;
+  }
+
+  &__icon-network {
+    height: 20px;
+    align-items: $align-items;
+
+    fill: $main-color;
+  }
+
+  &__form {
+    align-items: $align-items;
+  }
+
+  &__input {
+    display: $display-if;
+    align-items: $align-items;
+    line-height: $line-height-min;
+  }
+
+  &__input input {
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+    margin-right: 12px;
+
+    border: 1px solid $footer-input-border-color;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: $border-radius-max;
+    color: $main-color;
+    background-color: $footer-input-bgcolor;
+  }
+
+  &__input input::placeholder {
+    font-family: $body-font;
+    font-weight: $font-weight-thin;
+    font-size: $font-size-normal;
+    line-height: $line-height-semiaverage;
+    letter-spacing: $letter-spacing-mid;
+
+    color: $footer-color;
+  }
+
+  &__button-send {
+    @extend %block-main;
+    align-items: $align-items;
+    text-align: $text-align;
+    padding: 10px 29px;
+    border: $border-default;
+
+    min-width: 200px;
+    min-height: 50px;
+
+    border-radius: $border-radius-max;
+
+    cursor: pointer;
+
+    background-color: $accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    font-family: $body-font;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-normal;
+    line-height: $line-height-huge;
+
+    letter-spacing: $letter-spacing-max;
+
+    color: $main-color;
+  }
+
+  &__icon-send {
+    margin-left: 10px;
+
+    fill: $main-color;
+  }
+}
+
+.accent {
+  color: $accent-color;
+}

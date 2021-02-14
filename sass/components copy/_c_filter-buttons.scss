@@ -1,0 +1,39 @@
+.filter {
+  margin-bottom: 50px;
+
+  &__button-list {
+    display: $display-f;
+    justify-content: $justify-content;
+  }
+
+  &__button-item:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  &__button {
+    display: $display-ib;
+
+    font-family: $body-font;
+    font-weight: $font-weight-semibold;
+    font-size: $font-size-normal;
+    line-height: $line-height-semihight;
+
+    letter-spacing: $letter-spacing-mid;
+
+    cursor: $cursor;
+    border: $border-default;
+    border-radius: $border-radius-max;
+    padding: 6px 22px;
+
+    transition: background-color $time $cubic, color $time $cubic,
+      box-shadow $time $cubic;
+  }
+
+  &__button:hover,
+  &__button:focus {
+    color: $main-color;
+    background-color: $accent-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}

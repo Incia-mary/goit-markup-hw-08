@@ -1,0 +1,51 @@
+.client {
+  @extend %padding-block;
+
+  &__title {
+    @extend %title-text;
+  }
+
+  &__main {
+    @extend %block-main;
+  }
+
+  &__list {
+    @extend %block-main;
+    width: 170px;
+    height: 90px;
+  }
+
+  &__list:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__button {
+    @extend %block-main;
+    @extend %justify-align;
+    @extend %button-none-style;
+
+    width: 170px;
+    height: 90px;
+
+    color: $network-color;
+    background-color: $main-color;
+    border: 1px solid hsl(0, 0%, 93%);
+    border-radius: $border-radius-max;
+
+    transition: border-color $time $cubic, color $time $cubic;
+  }
+
+  &__button:hover,
+  &t__button:focus {
+    color: $accent-color;
+    border-color: $accent-color;
+  }
+
+  &__icon {
+    @extend %block-main;
+  }
+
+  &__icon {
+    fill: $icon-color;
+  }
+}

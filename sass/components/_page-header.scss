@@ -4,21 +4,39 @@
   background-color: $main-color;
 
   &__main-nav {
-    @extend %flex-style;
-    height: 80px;
+    display: $display-f;
+    align-items: $align-items;
+    height: 60px;
+    @media (min-width: $tablet-width) {
+      display: $display-f;
+      align-items: $align-items;
+      height: 80px;
+    }
   }
 
   &__nav {
-    @extend %flex-style;
+    display: $display-f;
+    align-items: $align-items;
   }
 
   &__site-nav {
-    @extend %flex-style;
-    margin-left: 93px;
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: $display-f;
+      align-items: $align-items;
+      margin-left: 88px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 93px;
+    }
   }
 
   &__site-nav .item:not(:last-child) {
-    margin-right: 50px;
+    @media (min-width: $tablet-width) {
+      margin-right: 50px;
+    }
   }
 
   &__line {
@@ -72,18 +90,35 @@
   }
 
   &__auth-nav {
-    display: $display-f;
-    margin-left: auto;
-    margin-top: 32px;
-    margin-bottom: 32px;
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: $display-b;
+      padding: 0;
+      align-items: $align-items;
+      justify-content: flex-start;
+      margin-left: 60px;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: $display-f;
+      margin-left: auto;
+      margin-top: 32px;
+      margin-bottom: 32px;
+    }
   }
 
   &__auth-nav .item + .item {
-    margin-left: 50px;
+    @media (min-width: $desktop-width) {
+      margin-left: 50px;
+      font-size: $font-size-lil;
+      line-height: $line-height-semimedium;
+    }
   }
 
   &__mail-tel {
-    @extend %flex-style;
+    display: $display-f;
+    align-items: $align-items;
 
     font-family: $body-font;
     font-weight: $font-weight-semibold;
@@ -93,6 +128,11 @@
     color: $primary-text-color;
 
     transition: color $time $cubic;
+
+    @media (max-width: $tablet-width) {
+      font-size: $font-size-lil;
+      line-height: $line-height-semimedium;
+    }
   }
 
   &__mail-tel:hover,
@@ -110,6 +150,36 @@
     margin-right: 10px;
 
     fill: $icon-color;
+  }
+
+  &__button {
+    padding: $padding-default;
+    border: $border-default;
+    line-height: $line-height-min;
+    position: $position-a;
+    top: 10px;
+    right: 15px;
+
+    background-color: $main-color;
+
+    transition: color $time $cubic;
+
+    cursor: $cursor;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &__button-icon {
+    width: 40px;
+    height: 40px;
+    fill: $icon-color;
+  }
+
+  &__button:hover,
+  &__button:focus {
+    color: $accent-color;
   }
 }
 
