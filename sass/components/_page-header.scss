@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   font-family: $body-font;
   color: $title-text-color;
   background-color: $main-color;
@@ -155,6 +156,8 @@
   }
 
   &__button {
+    display: $display-if;
+    margin: 0;
     padding: $padding-default;
     border: $border-default;
     line-height: $line-height-min;
@@ -173,6 +176,18 @@
     }
   }
 
+  &__button .header__cross-icon {
+    display: none;
+  }
+
+  &__button.is-open .header__cross-icon {
+    display: block;
+  }
+
+  &__button.is-open .header__mobile-icon {
+    display: none;
+  }
+
   &__button-icon {
     width: 40px;
     height: 40px;
@@ -182,6 +197,23 @@
   &__button:hover,
   &__button:focus {
     color: $accent-color;
+  }
+
+  &__menu-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+    height: 796px;
+
+    background-color: $main-color;
+    padding-left: 40px;
+
+    &.is-open {
+      display: block;
+    }
   }
 }
 

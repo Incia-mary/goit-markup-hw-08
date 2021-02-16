@@ -136,6 +136,7 @@ ul {
 }
 
 .header {
+  position: relative;
   font-family: "Roboto", sans-serif;
   color: #212121;
   background-color: #ffffff;
@@ -324,6 +325,10 @@ ul {
 }
 
 .header__button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
   padding: 0px;
   border: none;
   line-height: 0;
@@ -342,6 +347,18 @@ ul {
   }
 }
 
+.header__button .header__cross-icon {
+  display: none;
+}
+
+.header__button.is-open .header__cross-icon {
+  display: block;
+}
+
+.header__button.is-open .header__mobile-icon {
+  display: none;
+}
+
 .header__button-icon {
   width: 40px;
   height: 40px;
@@ -350,6 +367,21 @@ ul {
 
 .header__button:hover, .header__button:focus {
   color: #2196f3;
+}
+
+.header__menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 796px;
+  background-color: #ffffff;
+  padding-left: 40px;
+}
+
+.header__menu-container.is-open {
+  display: block;
 }
 
 .current.header__link::after,
@@ -584,6 +616,8 @@ textarea {
 }
 
 .modal {
+  /*min-width: 460px;
+  min-height: 609px;*/
   position: absolute;
   top: 50%;
   left: 50%;
