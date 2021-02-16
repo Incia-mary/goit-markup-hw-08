@@ -1,6 +1,6 @@
 .bullets {
   display: block;
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     display: $display-f;
     padding: $padding-default;
   }
@@ -14,40 +14,64 @@
   }
 
   &__main {
-    display: block;
-    @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+    @media (min-width: $tablet-width) {
       display: $display-f;
+      flex-wrap: wrap;
+      margin-top: -30px;
+      margin-left: -30px;
+    }
+
+    @media (min-width: $desktop-width) {
       padding: $padding-default;
     }
   }
-
-  &__item:not(:last-child) {
-    margin-bottom: 30px;
+  &__item {
+    width: 450px;
+    @media (max-width: $tablet-width) {
+      margin-top: 30px;
+    }
+    @media (min-width: $tablet-width) {
+      width: 354px;
+      margin-top: 30px;
+      margin-left: 30px;
+      flex-basis: calc(100% / 2 - 30px);
+    }
 
     @media (min-width: $desktop-width) {
-      margin-right: 30px;
+      width: 270px;
+
+      flex-basis: calc(100% / 4 - 30px);
     }
   }
 
   &__icon {
-    width: 270px;
     height: 120px;
-
+    width: 450px;
     padding-top: 25px;
     padding-bottom: 25px;
     margin-bottom: 30px;
 
     background-color: $color-bullet-hero;
     border-radius: $border-radius-max;
-  }
 
-  &__icon:not(:first-child) {
+    @media (min-width: $tablet-width) {
+      width: 354px;
+    }
+
     @media (min-width: $desktop-width) {
-      margin-right: 30px;
+      width: 270px;
     }
   }
 
+  &__icon:not(:first-child) {
+    margin-right: 30px;
+  }
+
   &__title {
+    @media (max-width: $tablet-width) {
+      text-align: $text-align;
+    }
     margin-top: 0;
     margin-bottom: 10px;
 

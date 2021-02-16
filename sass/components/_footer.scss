@@ -5,7 +5,9 @@
   background: $footer-input-bgcolor;
 
   &__info {
-    @extend %block-main;
+    @media (min-width: $desktop-width) {
+      display: $display-f;
+    }
   }
 
   &__logo {
@@ -96,9 +98,12 @@
   }
 
   &__input {
-    display: $display-if;
-    align-items: $align-items;
-    line-height: $line-height-min;
+    @media (min-width: $desktop-width) {
+      display: $display-f;
+
+      align-items: $align-items;
+      line-height: $line-height-min;
+    }
   }
 
   &__input input {

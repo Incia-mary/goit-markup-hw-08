@@ -1,4 +1,8 @@
 .direct {
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
+
   @extend %padding-block;
 
   &__title {

@@ -119,19 +119,21 @@
   &__mail-tel {
     display: $display-f;
     align-items: $align-items;
-
     font-family: $body-font;
     font-weight: $font-weight-semibold;
-    font-size: $font-size-mini;
-    line-height: $line-height-low;
     letter-spacing: $letter-spacing-ave;
     color: $primary-text-color;
 
     transition: color $time $cubic;
 
-    @media (max-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       font-size: $font-size-lil;
       line-height: $line-height-semimedium;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: $font-size-mini;
+      line-height: $line-height-low;
     }
   }
 
